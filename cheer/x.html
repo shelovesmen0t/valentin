@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วา เลน ทายยย</title>
+    <link rel="stylesheet" href="x.css">
+
+    <style>
+        body {
+            background-color: #ffeeee; 
+        }
+    </style>
+</head>
+
+<body>
+
+    <audio id="background-audio" loop autoplay>
+        <source src="\หมูเด้ง Moo Deng Reggaeton (1).mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="content">
+    <img src="\476496965_924716179747388_6443956909893821828_n.jpg">
+    <img src="\476492687_845073107714906_8553048229997777552_n.jpg">
+    <img src="\476498338_642482225103014_1665710538846156407_n.jpg">
+    </div>
+
+</body>
+</html>
+
+<script>
+    function createHeart() {
+        const heart = document.createElement("div");
+        heart.classList.add("heart");
+        heart.innerHTML = "❤️";
+
+        heart.style.left = Math.random() * window.innerWidth + "px";
+        heart.style.top = window.innerHeight + "px";
+
+        document.body.appendChild(heart);
+
+    }
+    setInterval(createHeart, 300);
+
+    const backgroundAudio = document.getElementById("background-audio");
+    backgroundAudio.volume = 0.2;  
+</script>

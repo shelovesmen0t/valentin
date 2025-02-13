@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://www.iconpacks.net/icons/1/free-heart-icon-431-thumb.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>หล่อมั้ย</title>
+
+    <style>
+        body {
+            background-color: #ffeeee; 
+        }
+    </style>
+  </head>
+  <body>
+    <!-- หน้าแรก -->
+    <div id="mainPage" class="container">
+      <span class="title">กูหล่อม่ายยยยย?</span>
+      <img id="mainImage" src="แอบ.png" alt="Do you?" />
+
+      <!-- ปุ่มกด -->
+      <div class="button-container">
+        <button
+          id="noButton"
+          class="button"
+          onmouseover="changeImage('ห๊า.jpg')"
+          onmouseout="resetImage()"
+          onclick="handleNoClick()"
+        >
+          ไม่
+        </button>
+        <button
+          id="loveButton"
+          class="button"
+          onmouseover="changeImage('อิอิ.jpg')"
+          onmouseout="resetImage()"
+          onclick="showPage('lovePage')"
+        >
+          หล่อ
+        </button>
+      </div>
+    </div>
+
+    <!-- หน้ากด รักกกก -->
+    <div id="lovePage" class="container hidden">
+      <h1>อุอุอิอิอะอะโอะโอะ ตาถึงๆ</h1>
+      <img src="หล่อ.jpg" alt="Love You" />
+    </div>
+
+    <!-- หน้าถ้ายังจะกด No เรื่อยๆ  -->
+    <div id="noPage" class="container hidden">
+        <h1>ไอสาสสสสสสสสสสสสสสสสสสสสสสสสสสสสสสสสสสสสสสสส</h1>
+      <img src="ร้อง.jpg" alt="Die" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
